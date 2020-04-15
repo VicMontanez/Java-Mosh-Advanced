@@ -10,7 +10,7 @@ public class ExceptionsDemo {
             System.out.println("File opened");
         }
         catch (FileNotFoundException ex) {
-            System.out.println("file does not exist.");
+            System.out.println(ex.getMessage());
         }
     }
 }
