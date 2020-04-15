@@ -2,15 +2,19 @@ package com.intro.exceptions;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class ExceptionsDemo {
     public static void show() {
         try {
             var reader = new FileReader("file.txt");
-            System.out.println("File opened");
+            var value = reader.read();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
-        catch (FileNotFoundException ex) {
-            System.out.println(ex.getMessage());
+        catch (IOException e ) {
+            System.out.println("Could not read data.");
         }
+
     }
 }
