@@ -3,18 +3,18 @@ package com.intro.exceptions;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 public class ExceptionsDemo {
     public static void show() {
         try {
             var reader = new FileReader("file.txt");
             var value = reader.read();
-        } catch (FileNotFoundException e) {
-            System.out.println("File does not exist");
+            new SimpleDateFormat().parse("");
         }
-        catch (IOException e ) {
+        catch (IOException | ParseException e ) {
             System.out.println("Could not read data.");
         }
-
     }
 }
