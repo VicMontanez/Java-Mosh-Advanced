@@ -10,7 +10,7 @@ public class ExceptionsDemo {
             var reader = new FileReader("file.txt");
             var value = reader.read();
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.out.println("File does not exist");
         }
         catch (IOException e ) {
             System.out.println("Could not read data.");
