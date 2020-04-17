@@ -10,6 +10,10 @@ import java.text.SimpleDateFormat;
 public class ExceptionsDemo {
     public static void show() {
         var account = new Account();
-        account.deposit(-1);
+        try {
+            account.deposit(1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
