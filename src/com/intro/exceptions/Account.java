@@ -10,8 +10,12 @@ public class Account {
             throw new IOException();
     }
 
-    public void withdraw (float value) throws InsufficientFundsException {
-        if (value > balance)
-            throw new InsufficientFundsException();
+    public void withdraw (float value) throws AccountException {
+        if (value > balance) {
+            var fundsException = new InsufficientFundsException();
+            var accountException = new AccountException();
+            accountException.initCause(fundsException);
+            throw accountException;
+        }
     }
 }
