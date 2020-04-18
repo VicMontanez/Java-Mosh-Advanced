@@ -8,7 +8,7 @@ public class List {
         items[count++] = item;
     }
 
-    public int get (int index) {
+    public Object get (int index) {
         return items[index];
     }
 }
