@@ -7,4 +7,8 @@ public class List {
     public void add(int item) {
         items[count++] = item;
     }
+
+    public int get (int index) {
+        return items[index];
+    }
 }
