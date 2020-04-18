@@ -5,6 +5,6 @@ public class List {
     private int count;
 
     public void add(int item) {
-
+        items[count++] = item;
     }
 }
