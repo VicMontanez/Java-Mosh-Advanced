@@ -4,7 +4,7 @@ public class List {
     private Object[] items = new Object[10];
     private int count;
 
-    public void add(int item) {
+    public void add(Object item) {
         items[count++] = item;
     }
 
