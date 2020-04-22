@@ -1,7 +1,7 @@
 package com.intro.generics;
 
 public class Utils {
-    public static int max(int first, int second) {
-        return (first > second) ? first : second;
+    public static <T extends Comparable<T>> T max(T first, T second) {
+        return (first.compareTo(second) <0) ? second : first;
     }
 }
