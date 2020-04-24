@@ -5,7 +5,10 @@ public class Utils {
         return (first.compareTo(second) <0) ? second : first;
     }
 
-    public static <K, V> void print(K key, V value) {
-        System.out.println(key + "=" + value);
+//    public static <K, V> void print(K key, V value) {
+//        System.out.println(key + "=" + value);
+//    }
+    public static void printUser(User user) {
+
     }
 }
