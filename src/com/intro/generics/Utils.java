@@ -9,6 +9,10 @@ public class Utils {
 //        System.out.println(key + "=" + value);
 //    }
     public static void printUser(User user) {
+        System.out.println(user);
+    }
+
+    public static void printUsers(GenericList<?> users) {
 
     }
 }
