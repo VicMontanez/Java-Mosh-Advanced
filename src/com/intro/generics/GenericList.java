@@ -1,6 +1,6 @@
 package com.intro.generics;
 
-public class GenericList<T extends Number> {
+public class GenericList<T extends Comparable & Cloneable> {
     private T[] items = (T[]) new Object[10];
     private int count;
 
