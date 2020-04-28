@@ -8,8 +8,8 @@ public class CollectionsDemo {
     public static void show () {
         Collection<String> collection = new ArrayList<> ();
         Collections.addAll(collection, "a", "b", "c");
-        var containsA = collection.contains("a");
-        System.out.println(containsA);
+        Object [] objectArray = collection.toArray();
+        String [] stringArray = collection.toArray(new String[3]);
         }
     }
 
