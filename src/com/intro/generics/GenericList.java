@@ -21,6 +21,10 @@ public class GenericList<T> implements Iterable<T> {
 
     private class ListIterator implements Iterator<T> {
 
+
+        public ListIterator(GenericList<T> list) {
+
+        }
         @Override
         public boolean hasNext() {
             return false;
