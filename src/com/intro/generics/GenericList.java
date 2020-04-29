@@ -18,4 +18,17 @@ public class GenericList<T> implements Iterable<T> {
     public Iterator<T> iterator() {
         return null;
     }
+
+    private class ListIterator implements Iterator<T> {
+
+        @Override
+        public boolean hasNext() {
+            return false;
+        }
+
+        @Override
+        public T next() {
+            return null;
+        }
+    }
 }
