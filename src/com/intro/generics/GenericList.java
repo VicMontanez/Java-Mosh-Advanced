@@ -16,7 +16,7 @@ public class GenericList<T> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator() {
-        return null;
+        return new ListIterator(this);
     }
 
     private class ListIterator implements Iterator<T> {
