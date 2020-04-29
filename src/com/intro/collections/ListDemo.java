@@ -8,7 +8,7 @@ public class ListDemo {
     public static void show() {
         List<String> list = new ArrayList<>();
         Collections.addAll(list, "a", "b", "c");
-        list.set(0, "a+");
+        list.remove(0);
         System.out.println(list);
     }
 }
