@@ -23,7 +23,7 @@ public class GenericList<T> implements Iterable<T> {
         private  GenericList<T> list;
 
         public ListIterator(GenericList<T> list) {
-
+            this.list = list;
         }
         @Override
         public boolean hasNext() {
