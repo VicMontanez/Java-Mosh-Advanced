@@ -20,7 +20,7 @@ public class GenericList<T> implements Iterable<T> {
     }
 
     private class ListIterator implements Iterator<T> {
-
+        private  GenericList<T> list;
 
         public ListIterator(GenericList<T> list) {
 
