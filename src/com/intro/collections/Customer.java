@@ -8,7 +8,10 @@ public class Customer implements Comparable<Customer>{
     }
 
     @Override
-    public int compareTo(Customer customer) {
-        return 0;
+    public int compareTo(Customer other) {
+        //this < other -> -1
+        // this == other -> 0
+        // this > other -> 1
+        return name.compareTo(other.name);
     }
 }
