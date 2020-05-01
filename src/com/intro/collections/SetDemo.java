@@ -10,7 +10,13 @@ public class SetDemo {
         //Union
         set1.addAll(set2);
 
+        //System.out.println(set1);
+
+        //Intersection - items common in both sets
+        set1.retainAll(set2);
+
         System.out.println(set1);
+
 
     }
 }
