@@ -15,6 +15,10 @@ public class SetDemo {
         //Intersection - items common in both sets
         set1.retainAll(set2);
 
+        //System.out.println(set1);
+
+        //Difference
+        set1.removeAll(set2);
         System.out.println(set1);
 
 
