@@ -2,6 +2,8 @@ package com.intro.collections;
 
 public class Customer implements Comparable<Customer>{
     private String name;
+    private String email;
+
 
     public Customer(String name) {
         this.name = name;
