@@ -10,7 +10,7 @@ public class QueueDemo {
         queue.add("a");
         queue.add("b");
         // b -> a -> c
-        var front = queue.element();
+        var front = queue.remove();
         System.out.println(front);
     }
 }
