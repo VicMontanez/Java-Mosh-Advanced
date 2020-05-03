@@ -21,5 +21,8 @@ public class MapDemo {
 //        System.out.println(exists);
 
         map.replace("e1", new Customer("a++", "e1"));
+
+        for (var customer : map.values())
+            System.out.println(customer);
     }
 }
