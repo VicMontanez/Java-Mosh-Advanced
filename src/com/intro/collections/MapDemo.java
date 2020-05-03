@@ -14,7 +14,10 @@ public class MapDemo {
         map.put(c1.getEmail(), c1);
         map.put(c2.getEmail(), c2);
 
-        var customer = map.get("e1");
-        System.out.println(customer);
+//        var customer = map.get("e1");
+//        System.out.println(customer);
+
+        var exists = map.containsKey("e10");
+        System.out.println(exists);
     }
 }
