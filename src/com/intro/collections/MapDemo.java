@@ -17,7 +17,9 @@ public class MapDemo {
 //        var customer = map.get("e1");
 //        System.out.println(customer);
 
-        var exists = map.containsKey("e10");
-        System.out.println(exists);
+//        var exists = map.containsKey("e10");
+//        System.out.println(exists);
+
+        map.replace("e1", new Customer("a++", "e1"));
     }
 }
