@@ -2,6 +2,7 @@ package com.intro.lambdas;
 
 public class LambdasDemo {
     public static void show() {
+        greet(new ConsolePrinter());
 
     }
 
