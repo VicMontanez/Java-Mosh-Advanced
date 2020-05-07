@@ -2,7 +2,7 @@ package com.intro.lambdas;
 
 public class LambdasDemo {
     public static void show() {
-        greet((String message) -> {
+        greet(message -> {
             System.out.println(message);
         });
 
