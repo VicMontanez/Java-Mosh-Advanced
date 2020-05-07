@@ -2,9 +2,8 @@ package com.intro.lambdas;
 
 public class LambdasDemo {
     public static void show() {
-        greet(message -> {
-            System.out.println(message);
-        });
+        greet(message ->
+            System.out.println(message));
 
         greet(new Printer() {
             @Override
