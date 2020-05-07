@@ -2,6 +2,8 @@ package com.intro.lambdas;
 
 public class LambdasDemo {
     public static void show() {
+        String prefix = "-";
+
         greet(message ->
             System.out.println(message));
 
