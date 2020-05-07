@@ -5,6 +5,7 @@ public class LambdasDemo {
         greet(new Printer() {
             @Override
             public void print(String message) {
+                System.out.println(message);
 
             }
         });
