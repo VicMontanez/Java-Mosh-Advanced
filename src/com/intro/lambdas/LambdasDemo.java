@@ -5,9 +5,9 @@ public class LambdasDemo {
         String prefix = "-";
 
         greet(message ->
-            System.out.println(message));
+            System.out.println(prefix + message));
 
-        Printer printer = message -> System.out.println(message);
+        //Printer printer = message -> System.out.println(message);
 
     }
 
