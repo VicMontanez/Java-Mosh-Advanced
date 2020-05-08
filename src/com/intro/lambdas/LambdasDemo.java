@@ -1,18 +1,11 @@
 package com.intro.lambdas;
 
 public class LambdasDemo {
-    public static  void print(String message) {}
+    public void print(String message) {}
     //public String prefix = "-";
-    public void show() {
-        greet(message -> print(message));
-        greet(LambdasDemo::print);
-//        greet(message ->
-//            System.out.println(message));
-//
-//        // Class/Object::method
-//        greet(System.out::println);
-
-        //Printer printer = message -> System.out.println(message);
+    public static void show() {
+        var demo = new LambdasDemo();
+        greet(demo::print);
 
     }
 
