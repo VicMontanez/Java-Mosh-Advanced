@@ -5,7 +5,7 @@ public class LambdasDemo {
     }
 
     public static void show() {
-
+        greet(LambdasDemo::new);
 
     }
 
