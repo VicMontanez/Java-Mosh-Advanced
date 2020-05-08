@@ -1,9 +1,8 @@
 package com.intro.lambdas;
 
 public class LambdasDemo {
+    public static  String prefix = "-";
     public static void show() {
-        String prefix = "-";
-
         greet(message ->
             System.out.println(prefix + message));
 
