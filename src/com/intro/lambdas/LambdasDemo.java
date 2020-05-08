@@ -5,6 +5,7 @@ public class LambdasDemo {
     //public String prefix = "-";
     public void show() {
         greet(message -> print(message));
+        greet(LambdasDemo::print);
 //        greet(message ->
 //            System.out.println(message));
 //
